@@ -1,0 +1,152 @@
+<!doctype html>
+
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portfolio — Icham Salou</title>
+  <meta name="description" content="Portfolio professionnel d'Icham Salou — Développeur web et commercial">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#111827; --muted:#9ca3af; --accent:#60a5fa; --glass: rgba(255,255,255,0.04);
+      --radius:14px; --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;background:linear-gradient(180deg,#071129 0%, #081026 60%);color:#e6eef8;line-height:1.5}
+    .wrap{max-width:var(--maxw);margin:40px auto;padding:28px}
+    header{display:flex;align-items:center;gap:20px}
+    .avatar{width:96px;height:96px;border-radius:18px;background:linear-gradient(135deg,var(--accent),#7dd3fc);display:flex;align-items:center;justify-content:center;font-weight:700;color:#04263a}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 0;color:var(--muted)}.grid{display:grid;grid-template-columns:1fr 340px;gap:24px;margin-top:28px}
+@media(max-width:880px){.grid{grid-template-columns:1fr} .right{order:-1}}
+
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:20px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+.section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+h2{margin:0;font-size:18px}
+
+/* About */
+.about p{color:var(--muted)}
+
+/* Skills */
+.skills{display:flex;flex-wrap:wrap;gap:8px}
+.skill{background:var(--glass);padding:8px 10px;border-radius:10px;font-size:13px;color:#dbeafe}
+
+/* Experience / Projects list */
+ul.clean{list-style:none;padding:0;margin:0}
+li.item{padding:10px 0;border-top:1px solid rgba(255,255,255,0.03)}
+li.item:first-child{border-top:0}
+.meta{color:var(--muted);font-size:13px}
+
+/* Contact */
+.contact-list{display:flex;flex-direction:column;gap:8px}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#7dd3fc);color:#04263a;text-decoration:none;font-weight:600}
+
+footer{margin-top:26px;text-align:center;color:var(--muted);font-size:13px}
+
+/* small interactions */
+.tagline{color:var(--muted);font-size:13px}
+
+/* Animated subtle background */
+.hero-bg{position:fixed;right:-200px;top:-200px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle at 30% 30%, rgba(96,165,250,0.07), transparent 30%), radial-gradient(circle at 70% 70%, rgba(125,211,252,0.04), transparent 30%);pointer-events:none;filter:blur(30px)}
+
+  </style>
+</head>
+<body>
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <header>
+      <div class="avatar">IS</div>
+      <div>
+        <h1>Icham Salou</h1>
+        <p class="lead">Développeur web full-stack & commercial — Django, HTML, CSS, JavaScript, mobile, et plus.</p>
+        <p class="tagline">Portfolio généré automatiquement — dites-moi si vous voulez d'autres sections ou une traduction.</p>
+      </div>
+    </header><div class="grid">
+  <main>
+    <section class="card about">
+      <div class="section-title"><h2>À propos</h2><span class="meta">Passionné et orienté résultats</span></div>
+      <p>Je suis un développeur web et professionnel commercial capable de combiner l'analyse marché et le développement technique pour livrer des produits utilisables et business-ready. J'ai de l'expérience avec les frameworks backend (Django, Flask), les technologies front (HTML, CSS, JavaScript), et des solutions mobiles/web (Flutter, React Native).</p>
+    </section>
+
+    <section class="card" style="margin-top:18px">
+      <div class="section-title"><h2>Compétences techniques</h2><span class="meta">Niveau: de l'initiation à avancé</span></div>
+      <div class="skills" id="skills-list">
+        <!-- Skills list inserted par JS -->
+      </div>
+    </section>
+
+    <section class="card" style="margin-top:18px">
+      <div class="section-title"><h2>Projets & expériences</h2><span class="meta">Exemples</span></div>
+      <ul class="clean" id="projects">
+        <li class="item"><strong>Chatbot Django</strong><div class="meta">Mise en place d'un chatbot temps réel avec Django Channels, WebSockets et ASGI.</div></li>
+        <li class="item"><strong>Site statique en ligne</strong><div class="meta">Déploiement de sites statiques et optimisation pour la performance.</div></li>
+        <li class="item"><strong>Application mobile (prototype)</strong><div class="meta">Prototype Flutter / React Native pour suppression du bruit audio et traitement.</div></li>
+      </ul>
+    </section>
+
+    <section class="card" style="margin-top:18px">
+      <div class="section-title"><h2>Services — que je peux offrir</h2><span class="meta">Sur demande</span></div>
+      <ul class="clean">
+        <li class="item"><strong>Formation Django</strong><div class="meta">Cours et exercices pratiques — création d'API REST, authentication, déploiement.</div></li>
+        <li class="item"><strong>Développement d'API & Intégrations</strong><div class="meta">Django REST, Firebase, intégration d'APIs externes (chatbots, services).</div></li>
+        <li class="item"><strong>Conseil produit & études de marché</strong><div class="meta">Combiner compétences commerciales et techniques pour étude et MVP.</div></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <aside class="right">
+    <div class="card">
+      <div class="section-title"><h2>Contact</h2><span class="meta">Disponible</span></div>
+      <p class="meta">Email: <em>votre-email@example.com</em></p>
+      <div class="contact-list" style="margin-top:12px">
+        <a class="btn" href="mailto:votre-email@example.com">Envoyer un mail</a>
+        <a class="btn" href="#projects" style="background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted);text-decoration:none">Voir projets</a>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:14px">
+      <div class="section-title"><h2>Compétences clés</h2><span class="meta">Résumé rapide</span></div>
+      <div class="skills" style="margin-top:8px">
+        <div class="skill">Django</div>
+        <div class="skill">Django Channels / WebSocket</div>
+        <div class="skill">ASGI</div>
+        <div class="skill">HTML & CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">REST APIs</div>
+        <div class="skill">Firebase</div>
+        <div class="skill">Flutter / React Native</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">Git</div>
+        <div class="skill">Flask / SQLAlchemy</div>
+        <div class="skill">Audio processing (suppression bruit)</div>
+      </div>
+    </div>
+
+  </aside>
+</div>
+
+<footer>© <span id="year"></span> Icham Salou — Portfolio généré. Modifiez le contenu pour ajouter vos coordonnées réelles.</footer>
+
+  </div>  <script>
+    // --- Liste plus complète des compétences (utiles pour generator) ---
+    const skills = [
+      'HTML', 'CSS', 'Responsive Design', 'JavaScript', 'Django', 'Django REST framework', 'Django Channels', 'ASGI',
+      'WebSockets', 'Flask', 'SQLAlchemy', 'PostgreSQL / SQLite', 'Firebase', 'Node.js', 'React (basics)', 'React Native',
+      'Flutter (basics)', 'Git & GitHub', 'Deployment (static sites)', 'Audio processing (noise reduction)', 'APIs integration', 'Testing & Debugging'
+    ];
+
+    const skillsContainer = document.getElementById('skills-list');
+    skills.forEach(s=>{
+      const div = document.createElement('div');div.className='skill';div.textContent=s;skillsContainer.appendChild(div);
+    });
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Small enhancement: smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{e.preventDefault();document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});});
+    });
+  </script></body>
+</html>
